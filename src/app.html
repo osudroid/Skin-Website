@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Add your skin to our Website, submit via GitHub" />
+		<link rel="icon" href="%svelte.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>osu!droid Skin Website</title>
+		%svelte.head%
+	</head>
+	<body style="margin: 0; background-color: #202060; font-family: 'PoppinsRegular';">
+		<div>%svelte.body%</div>
+	</body>
+
+	<style>
+		@font-face {
+			font-family: "PoppinsBold";
+			src:
+					local("PoppinsBold"), /*Checks the Font from User. If not installed, installs the Font from Server*/
+					url('/font/PoppinsBold.ttf') format('truetype');
+		}
+		@font-face {
+			font-family: "PoppinsRegular";
+			src:
+					local("PoppinsRegular"), /*Checks the Font from User. If not installed, installs the Font from Server*/
+					url('/font/PoppinsRegular.ttf') format('truetype');
+		}
+
+		:root *{
+			font-family: "PoppinsRegular", PoppinsRegular;
+		}
+
+	</style>
+
+</html>
