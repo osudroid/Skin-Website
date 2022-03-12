@@ -1,6 +1,5 @@
 <script>
     const lastUpdatedSkin_example = ("03.07.22")
-    const lastUpdatedSkin_THT = ("unknown")
 
 </script>
 
@@ -27,7 +26,11 @@
     <div class="SkinDiv">
         <button on:click={() => window.location.href='/skin/tht'} class="SkinButton">
             <p class="SkinName">THT</p></button>
-        <p class="SkinLastUpdated">Last Updated: {lastUpdatedSkin_THT}</p>
+    </div>
+
+    <div class="SkinDiv">
+        <button on:click={() => window.location.href='/skin/Seoul_v10'} class="SkinButton">
+            <p class="SkinName">Seoul_v10</p></button>
     </div>
 
 <!--/Todo Adding Skins here-->

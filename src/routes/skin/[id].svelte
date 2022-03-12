@@ -43,6 +43,7 @@
         "downloadSkinLink": string
     };
     console.log("owo", skin);
+
 </script>
 
 <svelte:head>
@@ -68,10 +69,11 @@
         </div>
 
         <div style="padding-bottom: 15px">
-            <button on:click={() => 'https://skins.osudroid.moe/SkinName/' + {id} }
-                    class="SkinButton">Download from Site
-            </button>
-            <p style="margin: 0">or</p>
+<!--            Disabled for now-->
+<!--            <button on:click={() => 'https://skins.osudroid.moe/d/skin/' + {id} + ".rar" }-->
+<!--                    class="SkinButton">Download from Site-->
+<!--            </button>-->
+<!--            <p style="margin: 0">or</p>-->
             <button on:click={() => window.location.href=skin.downloadSkinLink }
                     class="SkinButton">Download from Json
             </button>
