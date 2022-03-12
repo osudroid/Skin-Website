@@ -8,7 +8,7 @@
                     "lastUpdated": "",
                     "skinVersion": "",
                     "skinName": "",
-                    "skinNameForJson": "",
+                    "jsonName": "",
                     "previewImagesDownloadLink": "",
                     "downloadSkinLink": ""
                 }
@@ -19,7 +19,7 @@
             "lastUpdated": string,
             "skinVersion": string,
             "skinName": string,
-            "skinNameForJson": string,
+            "jsonName": string,
             "previewImagesDownloadLink": string,
             "downloadSkinLink": string
         } = await (await prop.fetch("/skinJson/" + prop.params.id + ".json")).json();
@@ -38,11 +38,11 @@
         "lastUpdated": string,
         "skinVersion": string,
         "skinName": string,
-        "skinNameForJson": string,
+        "jsonName": string,
         "previewImagesDownloadLink": string,
         "downloadSkinLink": string
     };
-    console.log("owo", skin);
+    console.log("owo", id, skin);
 
 </script>
 
@@ -58,7 +58,7 @@
             <p class="SkinSup">Version: {skin.skinVersion}</p>
             <b class="SkinTitle">{skin.skinName}</b>
         </div>
-
+        {console.log(id)}
         <div>
             <img class="SkinImgPreview" loading="lazy"
                  src={'https://skins.osudroid.moe/d/preview/' + id + '/selection.jpg'}/>
@@ -69,13 +69,12 @@
         </div>
 
         <div style="padding-bottom: 15px">
-<!--            Disabled for now-->
-<!--            <button on:click={() => 'https://skins.osudroid.moe/d/skin/' + {id} + ".rar" }-->
-<!--                    class="SkinButton">Download from Site-->
-<!--            </button>-->
-<!--            <p style="margin: 0">or</p>-->
+            <button on:click={() => window.location.href='https://skins.osudroid.moe/d/skin/' + id + '.rar'}
+                    class="SkinButton">Download from Site
+            </button>
+            <p style="margin: 0">or</p>
             <button on:click={() => window.location.href=skin.downloadSkinLink }
-                    class="SkinButton">Download from Json
+                    class="SkinButton">Download {id} from Json
             </button>
         </div>
     </div>

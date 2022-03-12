@@ -1,5 +1,4 @@
 <script>
-    const lastUpdatedSkin_example = ("03.07.22")
 
 </script>
 
@@ -7,8 +6,7 @@
     <div style="border: 1px solid #202060"/>
     <div class="SkinDiv" style="margin-top: 15px; margin-bottom: 25px;">
         <button on:click={() => window.location.href='/skin/example'} class="SkinButton">
-            <p class="SkinName">Example</p></button>
-        <p class="SkinLastUpdated">Last Updated: {lastUpdatedSkin_example}</p>
+            <p class="SkinName">Example</p></button><br/><br/>
         <div style="border: 3px solid #202060"/>
     </div>
 <!--------------------------------------------------------------------------------------------------------------------->
