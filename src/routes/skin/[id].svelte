@@ -8,7 +8,9 @@
                     "lastUpdated": "",
                     "skinVersion": "",
                     "skinName": "",
-                    "downloadLink": ""
+                    "skinNameForJson": "",
+                    "previewImagesDownloadLink": "",
+                    "downloadSkinLink": ""
                 }
             }
         };
@@ -17,7 +19,7 @@
             "lastUpdated": string,
             "skinVersion": string,
             "skinName": string,
-            "downloadLink": string
+            "downloadSkinLink": string
         } = await (await prop.fetch("/skinJson/" + prop.params.id + ".json")).json();
 
         return {props: {id: prop.params.id, skin: skin}};
@@ -34,7 +36,9 @@
         "lastUpdated": string,
         "skinVersion": string,
         "skinName": string,
-        "downloadLink": string
+        "skinNameForJson": string,
+        "previewImagesDownloadLink": string,
+        "downloadSkinLink": string
     };
     console.log("owo", skin);
 </script>
@@ -66,7 +70,7 @@
                     class="SkinButton">Download from Site
             </button>
             <p style="margin: 0">or</p>
-            <button on:click={() => window.location.href=skin.downloadLink }
+            <button on:click={() => window.location.href=skin.downloadSkinLink }
                     class="SkinButton">Download from Json
             </button>
         </div>
