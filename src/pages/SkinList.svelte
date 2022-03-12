@@ -35,7 +35,22 @@
         <button on:click={() => window.location.href='/skin/azr8midnight_v1.4'} class="SkinButton">
             <p class="SkinName">azr8midnight_v1.4</p></button>
     </div>
-
+    
+    <div class="SkinDiv">
+        <button on:click={() => window.location.href='/skin/letsGo'} class="SkinButton">
+            <p class="SkinName">letsGo</p></button>
+    </div>
+    
+    <div class="SkinDiv">
+        <button on:click={() => window.location.href='/skin/-GN_unclem_ver'} class="SkinButton">
+            <p class="SkinName">-GN_unclem_ver</p></button>
+    </div>
+    
+    <div class="SkinDiv">
+        <button on:click={() => window.location.href='/skin/Ekoro_Incandescent_Nebulae'} class="SkinButton">
+            <p class="SkinName">Ekoro_Incandescent_Nebulae</p></button>
+    </div>
+    
 <!--/Todo Adding Skins here-->
 
     <div class="SkinGoTopDiv SkinGoTop" on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>‹‹</div>
