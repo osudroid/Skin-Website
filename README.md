@@ -43,6 +43,7 @@ run tests without building the website.
  ```
 6. Now add each folder (/skin) and (/preview) to a separate .rar file. (It needs to be a ".rar" it can't be a .zip for the moment)
    *Example*
+   
    <img src="https://skins.osudroid.moe/d/preview.gif" width="500px;" alt=""/><br />
 
 7. Upload those .rar files to Mediafire,Drive,Mega,etc.
