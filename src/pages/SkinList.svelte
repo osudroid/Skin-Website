@@ -30,6 +30,11 @@
         <button on:click={() => window.location.href='/skin/Seoul_v10'} class="SkinButton">
             <p class="SkinName">Seoul_v10</p></button>
     </div>
+    
+    <div class="SkinDiv">
+        <button on:click={() => window.location.href='/skin/azr8midnight_v1.4'} class="SkinButton">
+            <p class="SkinName">azr8midnight_v1.4</p></button>
+    </div>
 
 <!--/Todo Adding Skins here-->
 
