@@ -19,6 +19,8 @@
             "lastUpdated": string,
             "skinVersion": string,
             "skinName": string,
+            "skinNameForJson": string,
+            "previewImagesDownloadLink": string,
             "downloadSkinLink": string
         } = await (await prop.fetch("/skinJson/" + prop.params.id + ".json")).json();
 

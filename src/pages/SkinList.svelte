@@ -1,5 +1,5 @@
 <script>
-    const lastUpdatedSkin_template = ("03.07.22")
+    const lastUpdatedSkin_example = ("03.07.22")
     const lastUpdatedSkin_THT = ("unknown")
 
 </script>
@@ -7,9 +7,9 @@
 <div class="SkinMain">
     <div style="border: 1px solid #202060"/>
     <div class="SkinDiv" style="margin-top: 15px; margin-bottom: 25px;">
-        <button on:click={() => window.location.href='/skin/template'} class="SkinButton">
-            <p class="SkinName">Template</p></button>
-        <p class="SkinLastUpdated">Last Updated: {lastUpdatedSkin_template}</p>
+        <button on:click={() => window.location.href='/skin/example'} class="SkinButton">
+            <p class="SkinName">Example</p></button>
+        <p class="SkinLastUpdated">Last Updated: {lastUpdatedSkin_example}</p>
         <div style="border: 3px solid #202060"/>
     </div>
 <!--------------------------------------------------------------------------------------------------------------------->
