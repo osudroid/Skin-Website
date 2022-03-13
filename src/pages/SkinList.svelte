@@ -19,38 +19,26 @@
             <button class="SkinButtonSearch">Search</button>
         </form>
     </div>
+
 <!--Todo Adding Skins here-->
+    <div class="SkinDiv"><br/>
 
-    <div class="SkinDiv">
-        <button on:click={() => window.location.href='/skin/tht'} class="SkinButton">
-            <p class="SkinName">THT</p></button>
-    </div>
-
-    <div class="SkinDiv">
         <button on:click={() => window.location.href='/skin/Seoul_v10'} class="SkinButton">
             <p class="SkinName">Seoul_v10</p></button>
-    </div>
-    
-    <div class="SkinDiv">
+
         <button on:click={() => window.location.href='/skin/azr8midnight_v1.4'} class="SkinButton">
             <p class="SkinName">azr8midnight_v1.4</p></button>
-    </div>
-    
-    <div class="SkinDiv">
+
         <button on:click={() => window.location.href='/skin/letsGo'} class="SkinButton">
             <p class="SkinName">letsGo</p></button>
-    </div>
-    
-    <div class="SkinDiv">
+
         <button on:click={() => window.location.href='/skin/-GN_unclem_ver'} class="SkinButton">
             <p class="SkinName">-GN_unclem_ver</p></button>
-    </div>
-    
-    <div class="SkinDiv">
+
         <button on:click={() => window.location.href='/skin/Ekoro_Incandescent_Nebulae'} class="SkinButton">
             <p class="SkinName">Ekoro_Incandescent_Nebulae</p></button>
+
     </div>
-    
 <!--/Todo Adding Skins here-->
 
     <div class="SkinGoTopDiv SkinGoTop" on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>‹‹</div>
@@ -58,7 +46,7 @@
 
 <style>
 
-    .SkinMain {background-color: #202040; border-radius: 25px; height: max(calc(100vh - 200px), 650px);}
+    .SkinMain {background-color: #202040; border-radius: 25px; margin-bottom: 165px; padding-bottom: 50px;}
     .SkinButtonSearch {
         width: 100px;
         background-color: #202060;
@@ -70,34 +58,18 @@
         cursor: pointer;
     }
 
-    .SkinButton {
-        margin: auto;
-        width: 300px;
-        background-color: #202060;
-        border-style: solid;
-        border-color: #2828a8;
-        border-radius: 15px;
-        color: #E3F4FF;
-        font-size: 17px;
-        cursor: pointer;
-    }
-    .SkinButton:hover {
-        background-color: #2828a8;
-    }
-
     .SkinName {
         margin: 0px;
         font-size: 24px;
+        word-wrap: break-word;
         color: #E3F4FF;
         text-decoration: none;
     }
-    .SkinLastUpdated {text-align: center; margin: 0; color: #E3F4FF}
 
     Form {
         background-color: #202060;
         width: 300px;
         height: 44px;
-        border-radius: 5px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -116,14 +88,16 @@
     }
 
     .SkinDiv {
+        margin: auto;
+        max-width: 2500px;
         text-align: center;
-        margin-top: 50px;
-        margin-bottom: -35px;
         color: #E3F4FF;
     }
 
     .SkinButton {
-        width: 250px;
+        margin: 5px;
+        width: 75%;
+        max-width: 400px;
         background-color: #202060;
         border-style: solid;
         border-color: #2828a8;
