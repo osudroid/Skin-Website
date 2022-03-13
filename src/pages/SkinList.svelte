@@ -37,6 +37,9 @@
 
         <button on:click={() => window.location.href='/skin/Ekoro_Incandescent_Nebulae'} class="SkinButton">
             <p class="SkinName">Ekoro_Incandescent_Nebulae</p></button>
+        
+        <button on:click={() => window.location.href='/skin/WhiteCat_CK_(1.0)'} class="SkinButton">
+            <p class="SkinName">WhiteCat_CK_(1.0)</p></button>
 
     </div>
 <!--/Todo Adding Skins here-->
