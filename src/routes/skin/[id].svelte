@@ -96,7 +96,8 @@
 
     .SkinTitle {
         margin: 0px;
-        font-size: 34px;
+        font-size: 1.5em;
+        word-wrap: break-word;
     }
 
     .SkinSup {
