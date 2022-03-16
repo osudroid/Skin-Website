@@ -40,6 +40,12 @@
         
         <button on:click={() => window.location.href='/skin/WhiteCat_CK_(1.0)'} class="SkinButton">
             <p class="SkinName">WhiteCat_CK_(1.0)</p></button>
+        
+        <button on:click={() => window.location.href='/skin/BaconBoi'} class="SkinButton">
+            <p class="SkinName">WhiteCat_CK_(1.0)</p></button>
+        
+        <button on:click={() => window.location.href='/skin/Mrekk_2.0_(FY)'} class="SkinButton">
+            <p class="SkinName">WhiteCat_CK_(1.0)</p></button>
 
     </div>
 <!--/Todo Adding Skins here-->
